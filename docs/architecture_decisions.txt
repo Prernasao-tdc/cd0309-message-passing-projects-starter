@@ -1,0 +1,8 @@
+Kafka:
+Kafka was chosen for event-driven messaging to facilitate asynchronous communication between services, ensuring decoupled and scalable system behavior.
+
+gRPC:
+gRPC was chosen for inter-service communication due to its high performance, low latency, and support for strong typing with Protocol Buffers.
+
+REST:
+RESTful API was chosen for external communication since it offers simplicity, wide adoption, and easy integration with frontend clients.

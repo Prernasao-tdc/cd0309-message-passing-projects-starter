@@ -1,0 +1,30 @@
+# gRPC Endpoint Documentation
+
+## Overview
+
+This document provides information about the gRPC endpoints used in the project. It includes details on the service definition and instructions on how to make sample requests.
+
+## Service Definition
+
+The gRPC service is defined using Protocol Buffers. Below is the example definition for the NotificationService:
+
+```proto
+syntax = "proto3";
+
+service NotificationService {
+  // Fetch notifications for a user
+  rpc GetNotifications (NotificationRequest) returns (NotificationList);
+}
+
+message NotificationRequest {
+  string user_id = 1;
+}
+
+message Notification {
+  string content = 1;
+  string timestamp = 2;
+}
+
+message NotificationList {
+  repeated Notification notifications = 1;
+}
